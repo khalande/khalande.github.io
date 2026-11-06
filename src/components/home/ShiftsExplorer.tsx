@@ -148,7 +148,7 @@ export const ShiftsExplorer: React.FC<ShiftsExplorerProps> = ({ shifts, sub, clo
 
         {/* Hub */}
         <div className="lg:col-span-5">
-          <div className="relative w-full max-w-[440px] mx-auto aspect-square" aria-live="polite">
+          <div className="relative w-full max-w-[440px] mx-auto aspect-square overflow-hidden" aria-live="polite">
             <div aria-hidden="true" className="absolute inset-[8%] rounded-full bg-[radial-gradient(circle,rgba(34,211,238,0.16),transparent_65%)]" />
             <svg aria-hidden="true" viewBox={`0 0 ${SIZE} ${SIZE}`} className="absolute inset-0 w-full h-full">
               <g className="ao-spin-rev" style={{ transformOrigin: `${C}px ${C}px` }}>
