@@ -1,0 +1,29 @@
+{
+  "rewrites": [
+    {
+      "source": "/manish",
+      "destination": "/manish/index.html"
+    },
+    {
+      "source": "/sneha",
+      "destination": "/sneha/index.html"
+    },
+    {
+      "source": "/((?!manish|sneha).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.vcf",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/vcard"
+        }
+      ]
+    }
+  ],
+  "cleanUrls": false,
+  "trailingSlash": false
+}

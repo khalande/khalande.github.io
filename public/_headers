@@ -1,0 +1,3 @@
+# Netlify: serve contact cards so phones save them as contacts
+/*.vcf
+  Content-Type: text/vcard

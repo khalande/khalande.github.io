@@ -1,0 +1,6 @@
+{
+  "name": "BlueNxt - HR ConsulTech",
+  "description": "World's First HR ConsulTech. Transforming Human Resources through AI-powered platforms, workforce operating ecosystem, and strategic consulting.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

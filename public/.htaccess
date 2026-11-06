@@ -1,0 +1,27 @@
+# Digital business cards: phones need this to save the contact
+AddType text/vcard .vcf
+# Digital business cards at /manish and /sneha: shown without a trailing slash or index.html.
+# DirectorySlash Off stops Apache from redirecting /manish to /manish/.
+DirectorySlash Off
+
+# Apache / cPanel hosting: serve the app for every route (so /academy etc. work on refresh)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteRule ^(manish|sneha)/?$ /$1/index.html [L]
+  RewriteRule ^(manish|sneha)/ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Long-cache the fingerprinted build files and media
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType video/mp4 "access plus 30 days"
+  ExpiresByType image/png "access plus 30 days"
+  ExpiresByType image/jpeg "access plus 30 days"
+</IfModule>

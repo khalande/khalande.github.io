@@ -1,0 +1,7 @@
+# Digital business cards: shown at /manish and /sneha (no index.html in the address)
+/manish    /manish/index.html   200
+/manish/   /manish/index.html   200
+/sneha     /sneha/index.html    200
+/sneha/    /sneha/index.html    200
+# Netlify: serve the app for every other route (so /academy etc. work on refresh)
+/*    /index.html   200
