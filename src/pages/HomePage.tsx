@@ -61,7 +61,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenContact }) => {
   };
 
   return (
-    <div className="relative space-y-24 sm:space-y-32 pb-20">
+    <div className="relative space-y-24 sm:space-y-32 pb-20 overflow-hidden">
       {/* 1. Hero: Bluenxt's hand-and-AI visual, as on the live site */}
       <section className="hero-bleed relative isolate min-h-[92svh] flex items-center pb-20 overflow-hidden">
         <VideoBackdrop media={HERO_MEDIA.home} variant="hero" focus="72% center" opacity={0.95} tint={false} neural />
